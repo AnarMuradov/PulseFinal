@@ -1,0 +1,41 @@
+.detail {
+  width: 100%;
+  min-height: 1000px;
+  background-color: lightblue;
+  &__container {
+    width: 70%;
+    min-height: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    &__data {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &__name {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        a {
+          color: white;
+          cursor: pointer;
+        }
+      }
+      &__content {
+        display: flex;
+        color: #7e7e7e;
+        gap: 10px;
+        &__description {
+          font-style: italic;
+        }
+        &__price {
+          color: white;
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

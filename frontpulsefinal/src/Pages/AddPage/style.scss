@@ -1,0 +1,37 @@
+.addPage{
+    width: 100%;
+    min-height: 1000px;
+    background-color: lightblue;
+    &__container{
+        width: 70%;
+        min-height: 1000px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 100px;
+        &__formik{
+            margin-top: 50px;
+            padding: 15px;
+            border: 3px solid black;
+            label{
+                display: block;
+            }
+            input{
+                margin-bottom: 5px;
+            }
+        }
+        &__table{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            table,th,td{
+                border: 1px solid black;
+                border-collapse:collapse;
+                padding: 10px;
+            }
+        }
+    }
+}

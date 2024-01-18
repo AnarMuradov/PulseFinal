@@ -1,0 +1,156 @@
+.menuSection {
+  width: 100%;
+  min-height: 953px;
+  background-image: url(https://preview.colorlib.com/theme/pulse/img/menu-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__container {
+    width: 70%;
+    min-height: 953px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      gap: 15px;
+      i {
+        font-size: 65px;
+      }
+      &__content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        span {
+          font-size: 50px;
+          font-weight: 500;
+        }
+        &__line {
+          height: 1px;
+          width: 250px;
+          background-color: #ffc515;
+        }
+        @media only screen and (max-width: 600px) {
+          &__line {
+            display: none;
+          }
+        }
+      }
+    }
+    &__items {
+      &__list {
+        display: flex;
+        gap: 30px;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        li {
+          cursor: pointer;
+          transition: 250ms;
+          &:hover {
+            color: #ffc515;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      &__items {
+        &__list {
+          flex-direction: column;
+        }
+      }
+    }
+    &__allData {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+      width: 100%;
+      justify-content: center;
+      justify-items: center;
+      color: white;
+      row-gap: 40px;
+      &__data {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &__name {
+          font-size: 18px;
+          font-weight: 500;
+          a {
+            color: white;
+            cursor: pointer;
+          }
+        }
+        &__content {
+          display: flex;
+          color: #7e7e7e;
+          gap: 10px;
+          &__description {
+            font-style: italic;
+          }
+          &__price {
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+          }
+        }
+        &__add {
+          button {
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+            background-color: transparent;
+            color: #ffc515;
+            border: 1px solid #ffc515;
+            cursor: pointer;
+          }
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        &__data {
+          &__name {
+            font-size: 14px;
+          }
+          &__content {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            &__description {
+            }
+            &__price {
+              font-size: 18px;
+            }
+          }
+          &__add {
+            button {
+              width: 100px;
+              height: 30px;
+              border-radius: 20px;
+              background-color: transparent;
+              color: #ffc515;
+              border: 1px solid #ffc515;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    &__btn {
+      button {
+        width: 230px;
+        height: 67px;
+        background-color: #ffc515;
+        color: black;
+        cursor: pointer;
+        border: none;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}
